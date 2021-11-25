@@ -1,11 +1,14 @@
 {
   "name": "moleculer-fibo-react",
   "version": "0.0.1",
-  "main": "services/fibo.service.js",
+  "main": "src/index.js",
+  "bin": {
+    "fibo": "bin/fibo.js"
+  },
   "author": "Mihael Stormrage",
   "license": "ISC",
   "scripts": {
-    "start": "moleculer-runner services",
+    "start": "babel-node bin/fibo",
     "test": "jest --colors"
   },
   "jest": {
